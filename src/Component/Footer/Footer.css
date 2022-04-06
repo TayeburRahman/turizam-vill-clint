@@ -1,0 +1,17 @@
+.footer {
+  font: bold;
+  color: rgb(141, 138, 111);
+  text-align: left;
+  background-color: rgb(26 32 64);
+}
+.footer a {
+  color: rgb(197, 197, 197);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.text-email {
+  color: #b3b3b3;
+}
