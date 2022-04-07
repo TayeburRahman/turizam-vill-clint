@@ -11,14 +11,14 @@ const Service = () => {
       <div className="text-left">
         <div className="row gap-3 service-row d-flex">
           {service.map((pd, index) => (
-            <div class="card col-md-4 col-sm-12 p-2" style={{ width: "23rem" }}>
-              <img className="" src={pd.img}class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">{pd.name}<span className="cart-span-text">{pd.members} || {pd.day}</span>
+            <div className="card col-md-4 col-sm-12 p-2" style={{ width: "23rem" }}>
+              <img className="" src={pd.img}className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">{pd.name}<span className="cart-span-text">{pd.members} || {pd.day}</span>
                 </h5>
-                <p class="card-text">{pd.description}</p>
+                <p className="card-text">{pd.description}</p>
                 {/* <Link to={`/service/${pd._id}`}> */}
-                <a href="" class="btn btn-primary">
+                <a href="" className="btn btn-primary">
                 VIEW MORE
                 </a>
                 {/* </Link> */}
