@@ -3,8 +3,8 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import useAuth from "../../Firebase/Hook/useAuth";
-import logo from "../../image/8766.gif"
-import './Header.css'
+import logo from "../../image/8766.gif";
+import './Header.css';
 
 const Header = () => {
   const { user, logOut } = useAuth();
@@ -72,15 +72,15 @@ const Header = () => {
                 <h6 className="text-manus p-2">ADD SERVICE</h6>
               </Nav.Link>
             </Nav>
-             <Navbar.Text>
+             <Navbar.Text className="d-grid">
               {user?.email ? (
-                <button className="buttons button-hover rounded  ps-3 ps-3 p-2  me-5" onClick={logOut}>
+                <button className="buttons rounded ps-3 p-2  me-3" onClick={logOut} style={{background:"rgb(162 167 6)"}}>
                   Log Out
                 </button>
               ) : (
                 <Nav.Link
                   to="/login"
-                  className="button-manus button-hover  text-black text-light rounded me-5"
+                  className="button-manus text-light rounded me-5"
                   as={HashLink}
                 >
                   LogIn{" "}

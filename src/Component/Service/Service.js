@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import useService from "../Hooks/useService";
 import './Service.css';
 
@@ -17,11 +18,11 @@ const Service = () => {
                 <h5 className="card-title">{pd.name}<span className="cart-span-text">{pd.members} || {pd.day}</span>
                 </h5>
                 <p className="card-text">{pd.description}</p>
-                {/* <Link to={`/service/${pd._id}`}> */}
+                <Link to={`/service/${pd._id}`}>
                 <a href="" className="btn btn-primary">
                 VIEW MORE
                 </a>
-                {/* </Link> */}
+                </Link>
               </div>
             </div>
           ))}
