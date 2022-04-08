@@ -19,9 +19,7 @@ const Service = () => {
                 </h5>
                 <p className="card-text">{pd.description}</p>
                 <Link to={`/service/${pd._id}`}>
-                <a href="" className="btn btn-primary">
-                VIEW MORE
-                </a>
+                <button class="button-9" role="button">VIEW MORE</button> 
                 </Link>
               </div>
             </div>

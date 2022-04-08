@@ -1,6 +1,4 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import PlaceHolders from "../../PlaceHolder/PlaceHolders";
  
@@ -16,7 +14,7 @@ const ServiceDtl = () => {
   return (
       <div>
         <div className="row text-left">
-          <div className="col-md-8 p-5">
+          <div className="col-md-8  col-sm-12 p-5">
             <div className=" background-color">
               <div className=" ps-3 pe-5 p-3">
                 <img src={service.img} width="100%" alt="" />
@@ -27,7 +25,7 @@ const ServiceDtl = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 col-sm-12">
           <PlaceHolders></PlaceHolders>
         </div>
         </div>

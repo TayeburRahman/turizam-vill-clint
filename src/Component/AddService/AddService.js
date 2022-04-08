@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import './AddService.css'
+import './AddService.css';
 
 const AddService = () => {
   const { reset, register, handleSubmit } = useForm();
@@ -24,43 +24,43 @@ const AddService = () => {
   }
 
   return (
-    <div>
+    <div className="">
       <div className="addService row mt-5 pb-5">
-      <h1 className="addService-text p-3">Please Add a Serves</h1>
-        <div className="col-md-5"></div>
-        <div className="col-md-7 mt-4  margin-left">
-          <form className="text-left ms-2" onSubmit={handleSubmit(onSubmit)}>
+      <h1 className="addService-text p-3 d-flex">Please Add a Serves</h1> 
+        <div className="col-md-6 mt-4  margin-left">
+          <form className="text-left ms-2 d-grid" onSubmit={handleSubmit(onSubmit)}>
             <input
               {...register("name", { required: true, maxLength: 20 })}
               placeholder="Name"
             />{" "}
-            <br /> <br />
+       
             <input
               type="number"
               {...register("price")}
               placeholder="Price"
             />{" "}
-            <br /> <br />
+     
             <input
               type="text"
               {...register("members")}
               placeholder="Members"
             />{" "}
-            <br /> <br />
+      
             <input
-              type="text"
+              type="date"
+              className="dateColor"
               {...register("day")}
-              placeholder="Day/T"
+              placeholder=""
             />{" "}
-            <br /> <br />
-            <input {...register("img")} placeholder="Image url" /> <br /> <br />
+ 
+            <input {...register("img")} placeholder="Image url" /> 
             <textarea
               className="text-from description"
               {...register("description")}
               placeholder="Description"
             />{" "}
-            <br /> <br />
-            <input className="submit-from buttons ps-4 pe-4 p-2" type="submit" />
+            <br /> 
+            <input className="submit-from buttons" type="submit" />
           </form>
         </div>
       </div>

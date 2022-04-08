@@ -29,7 +29,7 @@
   text-align: center;
 }
 .text-prim {
-  color: #5f6411;
+  color: #361576ba;
 }
 .backgroundText {
   background: #c5edc257;
@@ -38,8 +38,8 @@
 }
 /* CSS */
 .button-37 {
-  background-color: rgb(162, 167, 6);
-  border: 1px solid #bfca8c;
+  background-color: #405cf5;
+  border: 1px solid #4954ec;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
   box-sizing: border-box;

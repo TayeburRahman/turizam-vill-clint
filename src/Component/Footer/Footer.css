@@ -1,11 +1,11 @@
 .footer {
   font: bold;
-  color: rgb(141, 138, 111);
+  color: rgb(145, 160, 9);
   text-align: left;
-  background-color: rgb(26 32 64);
+  background-color: rgb(47 56 29);
 }
 .footer a {
-  color: rgb(197, 197, 197);
+  color: rgb(240, 240, 240);
   text-decoration: none;
 }
 

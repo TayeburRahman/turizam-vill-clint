@@ -23,6 +23,7 @@ const PlaceHolders = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = data => {
@@ -41,14 +42,14 @@ const PlaceHolders = () => {
       .then(result => {
         
         Swal.fire({
-          title: 'Sweet!',
-          text: 'Modal with a custom image.',
-          imageUrl: 'https://unsplash.it/400/200',
+          title: service.name,  
+          text: 'Success full your Booking',
+          imageUrl: service.img,
           imageWidth: 400,
           imageHeight: 200,
           imageAlt: 'Custom image',
         })
-
+        reset()
       });
   };
   return (
@@ -88,14 +89,15 @@ const PlaceHolders = () => {
           />
           <br />
           <br />
-          <h6>Camp Name</h6>
+          <h6>Booking Date</h6>
           <input
-            type="text"
+            type="date"
             defaultValue={service ? service.name : ""}
             {...register("name")}
           />
           <br />
           <br />
+          <h5>{service.name}</h5>
           <h5>Price : {service.price}$</h5>
           <br />
           <input className="optionSubmit" type="submit" />

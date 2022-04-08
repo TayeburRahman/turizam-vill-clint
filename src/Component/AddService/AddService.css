@@ -1,11 +1,25 @@
-.addService-text{
-    background-color: rgb(243, 241, 241);
-    color: rgb(245, 119, 2);
+.addService-text {
+  background-color: rgb(243, 241, 241);
+  color: rgb(128 141 21);
+}
+.addService {
+  justify-content: center !important;
 }
 
-.buttons{
-    background-color: rgb(247, 87, 23);
-    color: white;
-    border-radius: 5px;
-    border: 2px solid white;
+.buttons {
+  background-color: rgb(247, 87, 23);
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  height: 60px !important;
+}
+.text-left input {
+  height: 50px;
+  margin-bottom: 10px;
+}
+.dateColor {
+  color: rgb(82, 82, 82);
+}
+.submit-from {
+  height: 60px !important;
 }
